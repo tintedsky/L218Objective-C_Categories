@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Honda.h"
+#import "Honda+SupedUp.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    Honda *honda = [[Honda alloc]init];
+    [honda addUglySpoiler];
+    [honda addGoldPlasticSpinnerRims];
 }
 
 
